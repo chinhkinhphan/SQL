@@ -1,0 +1,25 @@
+CREATE TABLE items (id INTEGER PRIMARY KEYname,description TEXT,price INTEGER,in_stock INTEGER,category TEXT);
+
+INSERT INTO items (id, name, description, price, in_stock, category)
+VALUES
+  (1, 'T-Shirt', 'A comfortable cotton t-shirt', 19.99, 1, 'clothing'),
+  (2, 'Hoodie', 'A warm and cozy hoodie', 49.99, 0, 'clothing'),
+  (3, 'Jeans', 'Classic denim jeans', 39.99, 1, 'clothing'),
+  (4, 'Bike', 'A lightweight road bike', 999.99, 1, 'bikes'),
+  (5, 'Mountain Bike', 'A sturdy mountain bike', 1499.99, 0, 'bikes'),
+  (6, 'Helmet', 'A protective bike helmet', 29.99, 1, 'bikes'),
+  (7, 'Sneakers', 'Comfortable and stylish sneakers', 79.99, 1, 'shoes'),
+  (8, 'Boots', 'Sturdy and practical boots', 129.99, 1, 'shoes'),
+  (9, 'Sandals', 'Cool and breathable sandals', 49.99, 0, 'shoes'),
+  (10, 'Backpack', 'A durable and spacious backpack', 69.99, 1, 'accessories'),
+  (11, 'Sunglasses', 'Stylish and functional sunglasses', 99.99, 1, 'accessories'),
+  (12, 'Watch', 'A classic and elegant watch', 199.99, 1, 'accessories'),
+  (13, 'Swimsuit', 'A flattering and comfortable swimsuit', 29.99, 1, 'swimwear'),
+  (14, 'Beach Towel', 'A soft and absorbent beach towel', 19.99, 1, 'swimwear'),
+  (15, 'Sarong', 'A versatile and colorful sarong', 9.99, 0, 'swimwear');
+
+-- Order items by price, from lowest to highest
+SELECT * FROM items ORDER BY price ASC;
+
+-- Order items by price, from highest to lowest
+SELECT * FROM items ORDER BY price DESC;
